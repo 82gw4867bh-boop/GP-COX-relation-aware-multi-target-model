@@ -1,0 +1,30 @@
+{
+  "policy": {
+    "pop_size": 16,
+    "n_gen": 14,
+    "tournament_size": 3,
+    "crossover_prob": 0.5539488511016231,
+    "mutation_prob": 0.4149648544499899,
+    "elite_n": 4,
+    "max_height": 5,
+    "max_nodes": 20
+  },
+  "formal_top_k": 3,
+  "phaseA_top_k": 2,
+  "phaseC_and_top_k": 5,
+  "phaseC_main_top_k": 1,
+  "minimum_delta_cindex": -0.02,
+  "positive_folds_min": 2,
+  "worst_fold_drop_min": -0.03,
+  "min_relation_weight": 0.42509171168997256,
+  "max_candidates_per_target": 40,
+  "max_total_accepted_transfers": 4,
+  "max_accepted_total_per_target": 5,
+  "max_phaseA_accepted_per_target": 3,
+  "max_phaseC_and_accepted_per_target": 0,
+  "max_phaseC_main_accepted_per_target": 3,
+  "minimum_support_n": 8,
+  "minimum_support_events": 5,
+  "minimum_support_nonevents": 1,
+  "max_rule_length": 1
+}
