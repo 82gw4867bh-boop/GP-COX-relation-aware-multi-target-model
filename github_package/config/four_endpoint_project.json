@@ -1,0 +1,113 @@
+{
+  "package_kind": "annotated source reference",
+  "endpoints": [
+    {
+      "name": "death_hospice",
+      "id": "event_1_death_hospice",
+      "input_stem": "event_death_hospice_corrected_time"
+    },
+    {
+      "name": "institutional_nonhome",
+      "id": "event_2_institutional_nonhome",
+      "input_stem": "event_care_dependent_survival_after_index_icu"
+    },
+    {
+      "name": "icu_los_gt7d",
+      "id": "event_3_icu_los_gt7d",
+      "input_stem": "event_3_icu_time_to_exit"
+    },
+    {
+      "name": "home",
+      "id": "event_5_home",
+      "input_stem": "event_favourable_outcome_after_index_icu"
+    }
+  ],
+  "budget": {
+    "G": {
+      "phaseA": 12,
+      "phaseC": 20
+    },
+    "2G": {
+      "phaseA": 24,
+      "phaseC": 40
+    }
+  },
+  "phaseA_reference_matrix": [
+    [
+      0,
+      0.5,
+      0.6,
+      0.3
+    ],
+    [
+      0.5,
+      0,
+      0.4,
+      0.65
+    ],
+    [
+      0.6,
+      0.4,
+      0,
+      0.3
+    ],
+    [
+      0.3,
+      0.65,
+      0.3,
+      0
+    ]
+  ],
+  "phaseC_reference_matrix": [
+    [
+      0,
+      0.55,
+      0.65,
+      0.3
+    ],
+    [
+      0.55,
+      0,
+      0.45,
+      0.7
+    ],
+    [
+      0.65,
+      0.45,
+      0,
+      0.3
+    ],
+    [
+      0.3,
+      0.7,
+      0.3,
+      0
+    ]
+  ],
+  "end_only_relation_matrix": [
+    [
+      0.0,
+      0.5,
+      0.6,
+      0.3
+    ],
+    [
+      0.5,
+      0.0,
+      0.4,
+      0.65
+    ],
+    [
+      0.6,
+      0.4,
+      0.0,
+      0.3
+    ],
+    [
+      0.3,
+      0.65,
+      0.3,
+      0.0
+    ]
+  ]
+}

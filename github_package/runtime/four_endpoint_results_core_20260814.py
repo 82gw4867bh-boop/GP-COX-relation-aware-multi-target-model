@@ -12,6 +12,7 @@ from collections import OrderedDict
 from dataclasses import dataclass
 import importlib.util
 import json
+import os
 import math
 import re
 from pathlib import Path
@@ -25,15 +26,11 @@ from sklearn.preprocessing import StandardScaler
 
 
 ROOT = Path(__file__).resolve().parent
-LOCKED = (
-    ROOT
-    / "four_endpoint_total_calcium_pipeline_20260808"
-    / "harmonised_ca_initial_screen_20260809"
-    / "locked_four_endpoint_results_20260812"
-)
-KNOWLEDGE = LOCKED / "authoritative_G_and_2G" / "derived_noexchange_2g_knowledge"
-END_ONLY = LOCKED / "best_end_only_trial03"
-FROZEN_EVALUATOR = END_ONLY / "end_only_runtime" / "frozen_endpoint_evaluator.py"
+LOCKED = ROOT.parent / "config"
+KNOWLEDGE = LOCKED / "locked_structures"
+END_ONLY = ROOT / "end_only_backend"
+FROZEN_EVALUATOR = END_ONLY / "frozen_endpoint_evaluator.py"
+
 
 ENDPOINT_ORDER = (
     "event_1_death_hospice",
@@ -59,7 +56,7 @@ DATA_FILES = {
     "event_5_home": "event_favourable_outcome_after_index_icu",
     "event_3_icu_los_gt7d": "event_3_icu_time_to_exit",
 }
-DATA_ROOT = ROOT / "four_endpoint_total_calcium_pipeline_20260808" / "data"
+DATA_ROOT = Path(os.environ.get("COXGP_DATA_DIR", ROOT.parent / "data"))
 ENDPOINT_TITLE = {
     "event_1_death_hospice": "Death or hospice",
     "event_2_institutional_nonhome": "High-dependency institutional discharge",

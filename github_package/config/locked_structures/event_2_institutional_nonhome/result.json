@@ -1,0 +1,112 @@
+{
+  "main_effect_vars": [],
+  "final_gp_expressions": [
+    {
+      "gp_index": 1,
+      "expression": "sub(Anion.Gap, Total.Ca)"
+    },
+    {
+      "gp_index": 2,
+      "expression": "sub(Sodium, age)"
+    },
+    {
+      "gp_index": 3,
+      "expression": "safe_div(age, GCS.total)"
+    },
+    {
+      "gp_index": 4,
+      "expression": "clip(Sodium)"
+    },
+    {
+      "gp_index": 5,
+      "expression": "safe_sqrt(Sodium)"
+    }
+  ],
+  "phaseb_timebasis_final_selected_candidates": [
+    {
+      "name": "PHASEB::gp1 * early7",
+      "feature": "gp1",
+      "basis": "early7",
+      "interaction_col": "PHASEB__gp1__X__early7",
+      "type": "time_basis_interaction",
+      "expr": "gp1 * early7"
+    }
+  ],
+  "phasec_stgp_and_final_selected_candidates": [
+    {
+      "name": "AND::Mechanical.ventilation AND cefazolin",
+      "candidate_name": "AND::Mechanical.ventilation AND cefazolin",
+      "type": "and_rule",
+      "operator": "AND",
+      "main_effects": [
+        "Mechanical.ventilation",
+        "cefazolin"
+      ],
+      "interaction": "PHASEC_AND__Mechanical_ventilation__AND__cefazolin",
+      "interaction_pair": [
+        "Mechanical.ventilation",
+        "cefazolin"
+      ],
+      "cols_to_add": [
+        "Mechanical.ventilation",
+        "cefazolin",
+        "PHASEC_AND__Mechanical_ventilation__AND__cefazolin"
+      ],
+      "expr": "AND(Mechanical.ventilation, cefazolin)",
+      "leaf_terms": [
+        "Mechanical.ventilation",
+        "cefazolin"
+      ]
+    },
+    {
+      "name": "AND::Kcl AND Mechanical.ventilation",
+      "candidate_name": "AND::Kcl AND Mechanical.ventilation",
+      "type": "and_rule",
+      "operator": "AND",
+      "main_effects": [
+        "Kcl",
+        "Mechanical.ventilation"
+      ],
+      "interaction": "PHASEC_AND__Kcl__AND__Mechanical_ventilation",
+      "interaction_pair": [
+        "Kcl",
+        "Mechanical.ventilation"
+      ],
+      "cols_to_add": [
+        "Kcl",
+        "Mechanical.ventilation",
+        "PHASEC_AND__Kcl__AND__Mechanical_ventilation"
+      ],
+      "expr": "AND(Kcl, Mechanical.ventilation)",
+      "leaf_terms": [
+        "Kcl",
+        "Mechanical.ventilation"
+      ]
+    },
+    {
+      "name": "AND::Mechanical.ventilation AND admission_type_unplanned_admission",
+      "candidate_name": "AND::Mechanical.ventilation AND admission_type_unplanned_admission",
+      "type": "and_rule",
+      "operator": "AND",
+      "main_effects": [
+        "Mechanical.ventilation",
+        "admission_type_unplanned_admission"
+      ],
+      "interaction": "PHASEC_AND__Mechanical_ventilation__AND__admission_type_unplanned_admission",
+      "interaction_pair": [
+        "Mechanical.ventilation",
+        "admission_type_unplanned_admission"
+      ],
+      "cols_to_add": [
+        "Mechanical.ventilation",
+        "admission_type_unplanned_admission",
+        "PHASEC_AND__Mechanical_ventilation__AND__admission_type_unplanned_admission"
+      ],
+      "expr": "AND(Mechanical.ventilation, admission_type_unplanned_admission)",
+      "leaf_terms": [
+        "Mechanical.ventilation",
+        "admission_type_unplanned_admission"
+      ]
+    }
+  ]
+}

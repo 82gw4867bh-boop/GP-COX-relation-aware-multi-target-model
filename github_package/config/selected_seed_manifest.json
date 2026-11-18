@@ -1,0 +1,76 @@
+{
+  "schema": "four_endpoint_display_seed_selection_v1",
+  "rng_seed": 20260814,
+  "selection_timing": "seed identifiers frozen without reference to C-index values",
+  "formal_seeds_excluded_from_parenthetical_ranges": {
+    "boundary": 20260523,
+    "live_online": 20260523,
+    "end_only": 2026080903,
+    "G": 20260523,
+    "2G": 20260523
+  },
+  "selected_nonformal_seeds": {
+    "boundary": [
+      20260511,
+      20260513,
+      20260516,
+      20260521,
+      20260526,
+      20260533,
+      20260534,
+      20260536,
+      20260537,
+      20260538
+    ],
+    "live_online": [
+      20260511,
+      20260512,
+      20260513,
+      20260514,
+      20260516,
+      20260519,
+      20260522,
+      20260526,
+      20260531,
+      20260538
+    ],
+    "end_only": [
+      2026080889,
+      2026080891,
+      2026080893,
+      2026080894,
+      2026080899,
+      2026080907,
+      2026080909,
+      2026080910,
+      2026080912,
+      2026080913
+    ],
+    "G": [
+      20260518,
+      20260519,
+      20260520,
+      20260521,
+      20260522,
+      20260524,
+      20260525,
+      20260526,
+      20260527,
+      20260528
+    ],
+    "2G": [
+      20260518,
+      20260519,
+      20260520,
+      20260521,
+      20260522,
+      20260524,
+      20260525,
+      20260526,
+      20260527,
+      20260528
+    ]
+  },
+  "range_definition": "minimum--maximum across the selected 10 random seeds",
+  "g2g_selection": "all 10 nonformal seeds from the paired 11-seed experiment"
+}

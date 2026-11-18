@@ -1,0 +1,498 @@
+[
+  {
+    "variable_name": "Albumin",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Anion.Gap",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Arterial.BP..Diastolic.",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Arterial.BP..Systolic.",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Arterial.BP..mean.",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "BE",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "BMI",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "BUN",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Basophils",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "CO2.Blood",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Chloride",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Dobutamine",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Dopamine",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Eosinophils",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Epinephrine",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "GCS.total",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Glucose.Blood",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "HR",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Height",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Hemoglobin",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "INR",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Ionized.Ca",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Kcl",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Los.before.ICU.admission",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Lymphocytes",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "MCH",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "MCHC",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "MCV",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Magnesium",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Mechanical.ventilation",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Monocytes",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Morphine.Sulfate",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Norepinephrine",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "PCO2",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "PH",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "PO2",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "PT",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "PTT",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Paralysis",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Phosphate",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Potassium",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "RBC",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "RDW",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Sodium",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Specific.Gravity",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Total.Ca",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Total.bilirubin",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "WBC",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "Weight",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "admission_type",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "age",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "bicarbonate",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "cefazolin",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "creatinine",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "ethnicity",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "gender",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "glucocorticoid",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "hematocrit",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "lactate",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "platelets",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "respiration",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  },
+  {
+    "variable_name": "sum_diagnosis",
+    "available_eicu": true,
+    "available_mimic": true,
+    "early_icu_available": true,
+    "harmonized": true,
+    "leakage_free": true
+  }
+]

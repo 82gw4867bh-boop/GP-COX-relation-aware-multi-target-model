@@ -7,28 +7,11 @@ from typing import Any, Sequence
 import numpy as np
 
 
-_DEFAULT_ENDPOINTS = [
-    "death_hospice",
-    "institutional_nonhome",
-    "icu_los_gt7d",
-    "later_icu_same_hadm",
-    "home",
-    "hosp_los_gt14d",
-]
+_DEFAULT_ENDPOINTS = ['death_hospice', 'institutional_nonhome', 'icu_los_gt7d', 'home']
 
-_DEFAULT_ENDPOINT_IDS = {
-    "death_hospice": "event_1_death_hospice",
-    "institutional_nonhome": "event_2_institutional_nonhome",
-    "icu_los_gt7d": "event_3_icu_los_gt7d",
-    "later_icu_same_hadm": "event_4_later_icu_same_hadm",
-    "home": "event_5_home",
-    "hosp_los_gt14d": "event_6_hosp_los_gt14d",
-}
+_DEFAULT_ENDPOINT_IDS = {'death_hospice': 'event_1_death_hospice', 'institutional_nonhome': 'event_2_institutional_nonhome', 'icu_los_gt7d': 'event_3_icu_los_gt7d', 'home': 'event_5_home'}
 
-_DEFAULT_ENDPOINT_GROUPS = {
-    "terminal": ["death_hospice", "institutional_nonhome", "home"],
-    "resource": ["icu_los_gt7d", "later_icu_same_hadm", "hosp_los_gt14d"],
-}
+_DEFAULT_ENDPOINT_GROUPS = {'terminal': ['death_hospice', 'institutional_nonhome', 'home'], 'resource': ['icu_los_gt7d']}
 
 _DEFAULT_EXCLUSIVE_GROUPS = [["death_hospice", "institutional_nonhome", "home"]]
 
@@ -133,14 +116,7 @@ def build_phaseA_transfer_matrix(endpoint_names: Sequence[str]) -> np.ndarray:
             endpoint_names,
             _RUNTIME_CONFIG["phaseA_matrix"],
         )
-    phasea_transfer_matrix = [
-        [0.0, 0.50, 0.60, 0.60, 0.30, 0.70],
-        [0.50, 0.0, 0.40, 0.40, 0.65, 0.45],
-        [0.60, 0.40, 0.0, 0.75, 0.30, 0.85],
-        [0.60, 0.40, 0.75, 0.0, 0.30, 0.80],
-        [0.30, 0.65, 0.30, 0.30, 0.0, 0.35],
-        [0.70, 0.45, 0.85, 0.80, 0.35, 0.0],
-    ]
+    phasea_transfer_matrix = [[0.0, 0.5, 0.6, 0.3], [0.5, 0.0, 0.4, 0.65], [0.6, 0.4, 0.0, 0.3], [0.3, 0.65, 0.3, 0.0]]
     return _matrix_from_fixed(endpoint_names, phasea_transfer_matrix)
 
 
@@ -156,14 +132,7 @@ def build_phaseC_transfer_matrix(endpoint_names: Sequence[str]) -> np.ndarray:
             endpoint_names,
             _RUNTIME_CONFIG["phaseC_matrix"],
         )
-    phasec_transfer_matrix = [
-        [0.0, 0.55, 0.65, 0.65, 0.30, 0.70],
-        [0.55, 0.0, 0.45, 0.45, 0.70, 0.50],
-        [0.65, 0.45, 0.0, 0.80, 0.30, 0.85],
-        [0.65, 0.45, 0.80, 0.0, 0.30, 0.85],
-        [0.30, 0.70, 0.30, 0.30, 0.0, 0.35],
-        [0.70, 0.50, 0.85, 0.85, 0.35, 0.0],
-    ]
+    phasec_transfer_matrix = [[0.0, 0.55, 0.65, 0.3], [0.55, 0.0, 0.45, 0.7], [0.65, 0.45, 0.0, 0.3], [0.3, 0.7, 0.3, 0.0]]
     return _matrix_from_fixed(endpoint_names, phasec_transfer_matrix)
 
 
@@ -184,13 +153,7 @@ def build_transfer_matrix(endpoint_names: Sequence[str]) -> np.ndarray:
             gs = endpoint_group(source)
             mat[i, j] = 0.7 if gt and gt == gs else 0.3
 
-    special = {
-        ("icu_los_gt7d", "hosp_los_gt14d"): 0.8,
-        ("icu_los_gt7d", "later_icu_same_hadm"): 0.7,
-        ("hosp_los_gt7d", "hosp_los_gt14d"): 0.8,
-        ("hosp_los_gt7d", "later_icu_same_hadm"): 0.7,
-        ("later_icu_same_hadm", "hosp_los_gt14d"): 0.7,
-    }
+    special = {}
     idx = {name: i for i, name in enumerate(names)}
     for (a, b), weight in special.items():
         if a in idx and b in idx:

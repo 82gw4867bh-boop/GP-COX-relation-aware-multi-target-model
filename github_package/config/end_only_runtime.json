@@ -1,0 +1,109 @@
+{
+  "branch_name": "harmonised_ca_selected_end_only_trial_03",
+  "source_notebook": "newcox_route1_phaseB_phaseC_profile_style_aligned.ipynb",
+  "source_parameter_profile": "hcoxfix_trial010_forceB_softC",
+  "knowledge_root": "",
+  "output_root": "",
+  "run_output_root": "",
+  "branch_root": "",
+  "endpoints": [
+    {
+      "name": "death_hospice",
+      "folder": "event_1_death_hospice",
+      "train_file": ""
+    },
+    {
+      "name": "institutional_nonhome",
+      "folder": "event_2_institutional_nonhome",
+      "train_file": ""
+    },
+    {
+      "name": "icu_los_gt7d",
+      "folder": "event_3_icu_los_gt7d",
+      "train_file": ""
+    },
+    {
+      "name": "home",
+      "folder": "event_5_home",
+      "train_file": ""
+    }
+  ],
+  "relation_matrix": [
+    [
+      0.0,
+      0.5,
+      0.6,
+      0.3
+    ],
+    [
+      0.5,
+      0.0,
+      0.4,
+      0.65
+    ],
+    [
+      0.6,
+      0.4,
+      0.0,
+      0.3
+    ],
+    [
+      0.3,
+      0.65,
+      0.3,
+      0.0
+    ]
+  ],
+  "acceptance": {
+    "minimum_delta_cindex": -0.02,
+    "positive_folds_min": 2,
+    "worst_fold_drop_min": -0.03
+  },
+  "phaseC_and_rule_support": {
+    "minimum_support_n": 8,
+    "minimum_support_events": 5,
+    "minimum_support_nonevents": 1,
+    "max_rule_length": 1
+  },
+  "formal": {
+    "top_k_transfer_candidates": 3,
+    "top_k_by_candidate_type": {
+      "phaseA_gp": 2,
+      "phaseC_and_rule": 5,
+      "phaseC_main_effect": 1
+    }
+  },
+  "policy": {
+    "pop_size": 16,
+    "n_gen": 14,
+    "tournament_size": 3,
+    "crossover_prob": 0.5539488511016231,
+    "mutation_prob": 0.4149648544499899,
+    "elite_n": 4,
+    "max_height": 5,
+    "max_nodes": 20
+  },
+  "candidate_ranking": {
+    "min_relation_weight": 0.42509171168997256,
+    "max_candidates_per_target": 40
+  },
+  "transfer_capacity": {
+    "max_total_accepted_transfers": 4,
+    "max_accepted_total_per_target": 5,
+    "max_phaseA_accepted_per_target": 3,
+    "max_phaseC_and_accepted_per_target": 0,
+    "max_phaseC_main_accepted_per_target": 3
+  },
+  "smoke": {
+    "population": 16,
+    "generations": 14,
+    "top_k_transfer_candidates": 3,
+    "top_k_by_candidate_type": {
+      "phaseA_gp": 2,
+      "phaseC_and_rule": 5,
+      "phaseC_main_effect": 1
+    },
+    "cv_folds": 4,
+    "random_seed": 2026080903
+  }
+}

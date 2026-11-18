@@ -1,0 +1,1090 @@
+{
+  "event_death_hospice_corrected_time": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "dtype": "object"
+      },
+      {
+        "name": "hadm_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "stay_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "gender",
+        "dtype": "object"
+      },
+      {
+        "name": "age",
+        "dtype": "float64"
+      },
+      {
+        "name": "ethnicity",
+        "dtype": "object"
+      },
+      {
+        "name": "admission_type",
+        "dtype": "object"
+      },
+      {
+        "name": "time",
+        "dtype": "float64"
+      },
+      {
+        "name": "event",
+        "dtype": "int64"
+      },
+      {
+        "name": "WBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "HR",
+        "dtype": "int64"
+      },
+      {
+        "name": "respiration",
+        "dtype": "int64"
+      },
+      {
+        "name": "Arterial.BP..Diastolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..Systolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..mean.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Potassium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Sodium",
+        "dtype": "float64"
+      },
+      {
+        "name": "PO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "PT",
+        "dtype": "float64"
+      },
+      {
+        "name": "PTT",
+        "dtype": "float64"
+      },
+      {
+        "name": "Glucose.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Hemoglobin",
+        "dtype": "float64"
+      },
+      {
+        "name": "RDW",
+        "dtype": "float64"
+      },
+      {
+        "name": "BUN",
+        "dtype": "float64"
+      },
+      {
+        "name": "platelets",
+        "dtype": "float64"
+      },
+      {
+        "name": "creatinine",
+        "dtype": "float64"
+      },
+      {
+        "name": "bicarbonate",
+        "dtype": "float64"
+      },
+      {
+        "name": "hematocrit",
+        "dtype": "float64"
+      },
+      {
+        "name": "lactate",
+        "dtype": "float64"
+      },
+      {
+        "name": "INR",
+        "dtype": "float64"
+      },
+      {
+        "name": "BE",
+        "dtype": "float64"
+      },
+      {
+        "name": "Basophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Ionized.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Chloride",
+        "dtype": "float64"
+      },
+      {
+        "name": "Phosphate",
+        "dtype": "float64"
+      },
+      {
+        "name": "Lymphocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "Magnesium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Monocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "PCO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "RBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCH",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCHC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCV",
+        "dtype": "float64"
+      },
+      {
+        "name": "PH",
+        "dtype": "float64"
+      },
+      {
+        "name": "Anion.Gap",
+        "dtype": "float64"
+      },
+      {
+        "name": "CO2.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Specific.Gravity",
+        "dtype": "float64"
+      },
+      {
+        "name": "Weight",
+        "dtype": "float64"
+      },
+      {
+        "name": "Height",
+        "dtype": "float64"
+      },
+      {
+        "name": "BMI",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.bilirubin",
+        "dtype": "float64"
+      },
+      {
+        "name": "Morphine.Sulfate",
+        "dtype": "int64"
+      },
+      {
+        "name": "cefazolin",
+        "dtype": "int64"
+      },
+      {
+        "name": "Kcl",
+        "dtype": "int64"
+      },
+      {
+        "name": "glucocorticoid",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dopamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dobutamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Epinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Norepinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "sum_diagnosis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Eosinophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "GCS.total",
+        "dtype": "float64"
+      },
+      {
+        "name": "Los.before.ICU.admission",
+        "dtype": "float64"
+      },
+      {
+        "name": "Paralysis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Mechanical.ventilation",
+        "dtype": "int64"
+      },
+      {
+        "name": "Albumin",
+        "dtype": "float64"
+      }
+    ]
+  },
+  "event_care_dependent_survival_after_index_icu": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "dtype": "object"
+      },
+      {
+        "name": "hadm_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "stay_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "gender",
+        "dtype": "object"
+      },
+      {
+        "name": "age",
+        "dtype": "float64"
+      },
+      {
+        "name": "ethnicity",
+        "dtype": "object"
+      },
+      {
+        "name": "admission_type",
+        "dtype": "object"
+      },
+      {
+        "name": "time",
+        "dtype": "int64"
+      },
+      {
+        "name": "event",
+        "dtype": "int64"
+      },
+      {
+        "name": "WBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "HR",
+        "dtype": "int64"
+      },
+      {
+        "name": "respiration",
+        "dtype": "int64"
+      },
+      {
+        "name": "Arterial.BP..Diastolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..Systolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..mean.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Potassium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Sodium",
+        "dtype": "float64"
+      },
+      {
+        "name": "PO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "PT",
+        "dtype": "float64"
+      },
+      {
+        "name": "PTT",
+        "dtype": "float64"
+      },
+      {
+        "name": "Glucose.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Hemoglobin",
+        "dtype": "float64"
+      },
+      {
+        "name": "RDW",
+        "dtype": "float64"
+      },
+      {
+        "name": "BUN",
+        "dtype": "float64"
+      },
+      {
+        "name": "platelets",
+        "dtype": "float64"
+      },
+      {
+        "name": "creatinine",
+        "dtype": "float64"
+      },
+      {
+        "name": "bicarbonate",
+        "dtype": "float64"
+      },
+      {
+        "name": "hematocrit",
+        "dtype": "float64"
+      },
+      {
+        "name": "lactate",
+        "dtype": "float64"
+      },
+      {
+        "name": "INR",
+        "dtype": "float64"
+      },
+      {
+        "name": "BE",
+        "dtype": "float64"
+      },
+      {
+        "name": "Basophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Ionized.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Chloride",
+        "dtype": "float64"
+      },
+      {
+        "name": "Phosphate",
+        "dtype": "float64"
+      },
+      {
+        "name": "Lymphocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "Magnesium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Monocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "PCO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "RBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCH",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCHC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCV",
+        "dtype": "float64"
+      },
+      {
+        "name": "PH",
+        "dtype": "float64"
+      },
+      {
+        "name": "Anion.Gap",
+        "dtype": "float64"
+      },
+      {
+        "name": "CO2.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Specific.Gravity",
+        "dtype": "float64"
+      },
+      {
+        "name": "Weight",
+        "dtype": "float64"
+      },
+      {
+        "name": "Height",
+        "dtype": "float64"
+      },
+      {
+        "name": "BMI",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.bilirubin",
+        "dtype": "float64"
+      },
+      {
+        "name": "Morphine.Sulfate",
+        "dtype": "int64"
+      },
+      {
+        "name": "cefazolin",
+        "dtype": "int64"
+      },
+      {
+        "name": "Kcl",
+        "dtype": "int64"
+      },
+      {
+        "name": "glucocorticoid",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dopamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dobutamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Epinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Norepinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "sum_diagnosis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Eosinophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "GCS.total",
+        "dtype": "float64"
+      },
+      {
+        "name": "Los.before.ICU.admission",
+        "dtype": "float64"
+      },
+      {
+        "name": "Paralysis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Mechanical.ventilation",
+        "dtype": "int64"
+      },
+      {
+        "name": "Albumin",
+        "dtype": "float64"
+      }
+    ]
+  },
+  "event_3_icu_time_to_exit": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "dtype": "object"
+      },
+      {
+        "name": "hadm_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "stay_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "gender",
+        "dtype": "object"
+      },
+      {
+        "name": "age",
+        "dtype": "float64"
+      },
+      {
+        "name": "ethnicity",
+        "dtype": "object"
+      },
+      {
+        "name": "admission_type",
+        "dtype": "object"
+      },
+      {
+        "name": "time",
+        "dtype": "int64"
+      },
+      {
+        "name": "event",
+        "dtype": "int64"
+      },
+      {
+        "name": "WBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "HR",
+        "dtype": "int64"
+      },
+      {
+        "name": "respiration",
+        "dtype": "int64"
+      },
+      {
+        "name": "Arterial.BP..Diastolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..Systolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..mean.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Potassium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Sodium",
+        "dtype": "float64"
+      },
+      {
+        "name": "PO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "PT",
+        "dtype": "float64"
+      },
+      {
+        "name": "PTT",
+        "dtype": "float64"
+      },
+      {
+        "name": "Glucose.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Hemoglobin",
+        "dtype": "float64"
+      },
+      {
+        "name": "RDW",
+        "dtype": "float64"
+      },
+      {
+        "name": "BUN",
+        "dtype": "float64"
+      },
+      {
+        "name": "platelets",
+        "dtype": "float64"
+      },
+      {
+        "name": "creatinine",
+        "dtype": "float64"
+      },
+      {
+        "name": "bicarbonate",
+        "dtype": "float64"
+      },
+      {
+        "name": "hematocrit",
+        "dtype": "float64"
+      },
+      {
+        "name": "lactate",
+        "dtype": "float64"
+      },
+      {
+        "name": "INR",
+        "dtype": "float64"
+      },
+      {
+        "name": "BE",
+        "dtype": "float64"
+      },
+      {
+        "name": "Basophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Ionized.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Chloride",
+        "dtype": "float64"
+      },
+      {
+        "name": "Phosphate",
+        "dtype": "float64"
+      },
+      {
+        "name": "Lymphocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "Magnesium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Monocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "PCO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "RBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCH",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCHC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCV",
+        "dtype": "float64"
+      },
+      {
+        "name": "PH",
+        "dtype": "float64"
+      },
+      {
+        "name": "Anion.Gap",
+        "dtype": "float64"
+      },
+      {
+        "name": "CO2.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Specific.Gravity",
+        "dtype": "float64"
+      },
+      {
+        "name": "Weight",
+        "dtype": "float64"
+      },
+      {
+        "name": "Height",
+        "dtype": "float64"
+      },
+      {
+        "name": "BMI",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.bilirubin",
+        "dtype": "float64"
+      },
+      {
+        "name": "Morphine.Sulfate",
+        "dtype": "int64"
+      },
+      {
+        "name": "cefazolin",
+        "dtype": "int64"
+      },
+      {
+        "name": "Kcl",
+        "dtype": "int64"
+      },
+      {
+        "name": "glucocorticoid",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dopamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dobutamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Epinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Norepinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "sum_diagnosis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Eosinophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "GCS.total",
+        "dtype": "float64"
+      },
+      {
+        "name": "Los.before.ICU.admission",
+        "dtype": "float64"
+      },
+      {
+        "name": "Paralysis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Mechanical.ventilation",
+        "dtype": "int64"
+      },
+      {
+        "name": "Albumin",
+        "dtype": "float64"
+      }
+    ]
+  },
+  "event_favourable_outcome_after_index_icu": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "dtype": "object"
+      },
+      {
+        "name": "hadm_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "stay_id",
+        "dtype": "int64"
+      },
+      {
+        "name": "gender",
+        "dtype": "object"
+      },
+      {
+        "name": "age",
+        "dtype": "float64"
+      },
+      {
+        "name": "ethnicity",
+        "dtype": "object"
+      },
+      {
+        "name": "admission_type",
+        "dtype": "object"
+      },
+      {
+        "name": "time",
+        "dtype": "int64"
+      },
+      {
+        "name": "event",
+        "dtype": "int64"
+      },
+      {
+        "name": "WBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "HR",
+        "dtype": "int64"
+      },
+      {
+        "name": "respiration",
+        "dtype": "int64"
+      },
+      {
+        "name": "Arterial.BP..Diastolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..Systolic.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Arterial.BP..mean.",
+        "dtype": "float64"
+      },
+      {
+        "name": "Potassium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Sodium",
+        "dtype": "float64"
+      },
+      {
+        "name": "PO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "PT",
+        "dtype": "float64"
+      },
+      {
+        "name": "PTT",
+        "dtype": "float64"
+      },
+      {
+        "name": "Glucose.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Hemoglobin",
+        "dtype": "float64"
+      },
+      {
+        "name": "RDW",
+        "dtype": "float64"
+      },
+      {
+        "name": "BUN",
+        "dtype": "float64"
+      },
+      {
+        "name": "platelets",
+        "dtype": "float64"
+      },
+      {
+        "name": "creatinine",
+        "dtype": "float64"
+      },
+      {
+        "name": "bicarbonate",
+        "dtype": "float64"
+      },
+      {
+        "name": "hematocrit",
+        "dtype": "float64"
+      },
+      {
+        "name": "lactate",
+        "dtype": "float64"
+      },
+      {
+        "name": "INR",
+        "dtype": "float64"
+      },
+      {
+        "name": "BE",
+        "dtype": "float64"
+      },
+      {
+        "name": "Basophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Ionized.Ca",
+        "dtype": "float64"
+      },
+      {
+        "name": "Chloride",
+        "dtype": "float64"
+      },
+      {
+        "name": "Phosphate",
+        "dtype": "float64"
+      },
+      {
+        "name": "Lymphocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "Magnesium",
+        "dtype": "float64"
+      },
+      {
+        "name": "Monocytes",
+        "dtype": "float64"
+      },
+      {
+        "name": "PCO2",
+        "dtype": "float64"
+      },
+      {
+        "name": "RBC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCH",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCHC",
+        "dtype": "float64"
+      },
+      {
+        "name": "MCV",
+        "dtype": "float64"
+      },
+      {
+        "name": "PH",
+        "dtype": "float64"
+      },
+      {
+        "name": "Anion.Gap",
+        "dtype": "float64"
+      },
+      {
+        "name": "CO2.Blood",
+        "dtype": "float64"
+      },
+      {
+        "name": "Specific.Gravity",
+        "dtype": "float64"
+      },
+      {
+        "name": "Weight",
+        "dtype": "float64"
+      },
+      {
+        "name": "Height",
+        "dtype": "float64"
+      },
+      {
+        "name": "BMI",
+        "dtype": "float64"
+      },
+      {
+        "name": "Total.bilirubin",
+        "dtype": "float64"
+      },
+      {
+        "name": "Morphine.Sulfate",
+        "dtype": "int64"
+      },
+      {
+        "name": "cefazolin",
+        "dtype": "int64"
+      },
+      {
+        "name": "Kcl",
+        "dtype": "int64"
+      },
+      {
+        "name": "glucocorticoid",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dopamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Dobutamine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Epinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "Norepinephrine",
+        "dtype": "int64"
+      },
+      {
+        "name": "sum_diagnosis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Eosinophils",
+        "dtype": "float64"
+      },
+      {
+        "name": "GCS.total",
+        "dtype": "float64"
+      },
+      {
+        "name": "Los.before.ICU.admission",
+        "dtype": "float64"
+      },
+      {
+        "name": "Paralysis",
+        "dtype": "int64"
+      },
+      {
+        "name": "Mechanical.ventilation",
+        "dtype": "int64"
+      },
+      {
+        "name": "Albumin",
+        "dtype": "float64"
+      }
+    ]
+  }
+}

@@ -742,7 +742,7 @@ def run_external_validation(
             "zero_exchange_delta_vs_stored_2G": zero_delta,
         })
 
-    label = "5endpoint" if len(cfg["endpoints"]) == 5 else "6endpoint"
+    label = "4endpoint"
     df = pd.DataFrame(rows)
     df.to_csv(branch_root / f"external_validation_{label}.csv", index=False, encoding="utf-8-sig")
     df.to_excel(branch_root / f"external_validation_{label}.xlsx", index=False)

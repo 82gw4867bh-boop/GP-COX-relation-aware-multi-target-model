@@ -1,3 +1,3 @@
 ## Code availability
 
-The code used for cohort definition, single-target Cox-GP modelling, the three fixed multi-target exchange strategies, and fixed-structure safe-repair analyses is available at this repository. The released package includes the default configurations used for the reported multi-target analyses and compact 10-seed stability records.
+This repository provides the four-endpoint analytical pipeline from harmonised endpoint tables: staged GP-Cox, checkpoint continuation, three exchange strategies, fixed-model reconstruction, seed schedules, statistical comparisons and optional DeepSurv/RSF modules. README.md describes installation, input contracts and commands. Cohort-identification queries are included; construction of the complete harmonised predictor tables is a prerequisite. Controlled-access patient tables, credentials and private run histories are not distributed.
